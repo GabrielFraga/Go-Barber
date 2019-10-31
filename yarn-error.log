@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add date-fns@next
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add mongoose
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/gabrielfraga/Android/Sdk/tools:/home/gabrielfraga/Android/Sdk/platform-tools:/opt/yarn-v1.19.0/bin:/home/gabrielfraga/.yarn/bin
@@ -28,6 +28,7 @@ npm manifest:
     },
     "dependencies": {
       "bcrypt": "^3.0.6",
+      "date-fns": "^2.0.0-beta.5",
       "express": "^4.17.1",
       "jsonwebtoken": "^8.5.1",
       "multer": "^1.4.2",
@@ -663,6 +664,11 @@ Lockfile:
     dependencies:
       es5-ext "^0.10.50"
       type "^1.0.1"
+  
+  date-fns@^2.0.0-beta.5:
+    version "2.0.0-beta.5"
+    resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.0.0-beta.5.tgz#90885db3772802d55519cd12acd49de56aca1059"
+    integrity sha512-GS5yi964NDFNoja9yOdWFj9T97T67yLrUeJZgddHaVfc/6tHWtX7RXocuubmZkNzrZUZ9BqBOW7jTR5OoWjJ1w==
   
   debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.8, debug@^2.6.9:
     version "2.6.9"
