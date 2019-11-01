@@ -1,8 +1,4 @@
-import pt from 'date-fns/locale/pt';
-import { startOfHour, parseISO, isBefore, format, subHours } from 'date-fns';
-import Appointment from '../models/Appointment';
 import User from '../models/User';
-import File from '../models/File';
 import Notification from '../schemas/Notification';
 
 class NotificationController {
