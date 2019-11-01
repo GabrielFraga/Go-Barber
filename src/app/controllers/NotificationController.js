@@ -1,5 +1,9 @@
-import Notification from '../schemas/Notification';
+import pt from 'date-fns/locale/pt';
+import { startOfHour, parseISO, isBefore, format, subHours } from 'date-fns';
+import Appointment from '../models/Appointment';
 import User from '../models/User';
+import File from '../models/File';
+import Notification from '../schemas/Notification';
 
 class NotificationController {
   async index(req, res) {
@@ -20,6 +24,16 @@ class NotificationController {
       .limit(20);
 
     return res.json(notifications);
+  }
+
+  async update(req, res) {
+    const notification = await Notification.findByIdAndUpdate(
+      req.params.id,
+      { read: true },
+      { new: true }
+    );
+
+    return res.json(notification);
   }
 }
 
